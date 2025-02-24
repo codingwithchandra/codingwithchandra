@@ -21,7 +21,7 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
-    // Save Employee
+    // API for Save Employee 
     @PostMapping(value = "/saveEmployee", produces = "application/json")
     public ResponseEntity<ApiResponse<Employee>> saveEmployee(@RequestBody EmployeeFormModel employeeFormModel) {
         ApiResponse<Employee> response = employeeService.saveEmployee(employeeFormModel);
